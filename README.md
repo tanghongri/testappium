@@ -2,7 +2,9 @@
 
 #环境
 python -V
+
 Python 3.6.5
+
 ---
 #安装appium
 ---
