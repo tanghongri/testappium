@@ -1,6 +1,9 @@
 # testappium
 
 ---
+API手册：http://appium.io/docs/en/commands/status/
+
+---
 工具：vscode
 
 ---
