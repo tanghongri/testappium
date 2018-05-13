@@ -6,6 +6,7 @@ API手册：http://appium.io/docs/en/commands/status/
 元素抓取：http://appium.io/docs/en/writing-running-appium/android/uiautomator-uiselector/
 
 https://developer.android.com/reference/android/support/test/uiautomator/UiSelector(要翻墙)
+
 ---
 工具：vscode
 
