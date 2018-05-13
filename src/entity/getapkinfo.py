@@ -20,6 +20,9 @@ def PrintDriverInfo(driver):
     if driver.current_activity:
         print('##### current_activity #####')
         print(driver.current_activity)
+    if driver.context:
+        print('##### context #####')
+        print(driver.context)
     if driver.contexts:
         print('##### contexts #####')
         print(driver.contexts)

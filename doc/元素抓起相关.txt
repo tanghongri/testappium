@@ -1,0 +1,29 @@
+  
+appium server端错误日志可以找到 appPackage 和 appActivity
+    desired_caps = {}
+    desired_caps['platformName'] = 'Android'
+    desired_caps['platformVersion'] = '8.1'
+    desired_caps['deviceName'] = 'Android Emulator'
+    desired_caps['app'] = PATH(
+        '../apps/apk/dingding.apk'
+    )
+    driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
+
+    '''
+    appium server的错误信息会告诉你 appPackage 和 appActivity
+    [ADB] Found package: 'com.alibaba.android.rimet' and
+    fully qualified activity name : 'com.alibaba.android.rimet.biz.SlideActivity'
+    '''
+
+配置 appPackage 和 appActivity 后获取元素信息(dingding.xml)
+    desired_caps['appPackage'] = 'com.alibaba.android.rimet'    
+    desired_caps['appActivity'] = '.biz.SplashActivity'
+
+按照 className 排序抓取(instance所有相同顺序排列，index不同层级会出错)
+    el = driver.find_element_by_android_uiautomator(
+        'new UiSelector().className("android.widget.Button").instance(0)')
+
+按照 resourceId 排序抓取
+    el = driver.find_element_by_android_uiautomator(
+        'new UiSelector().resourceId("com.alibaba.android.rimet:id/login_slide_btn")')
+
