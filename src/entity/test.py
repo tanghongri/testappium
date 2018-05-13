@@ -25,5 +25,7 @@ if __name__ == '__main__':
         'new UiSelector().className("android.widget.Button").instance(0)')
     el = driver.find_element_by_android_uiautomator(
         'new UiSelector().resourceId("com.alibaba.android.rimet:id/login_slide_btn")')
+    el = driver.find_element_by_android_uiautomator(
+        'new UiSelector().text("新用户注册")')   
     el.click()
     driver.quit()
