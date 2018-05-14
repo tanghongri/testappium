@@ -37,12 +37,17 @@ npm install --global --production windows-build-tools
 UiAutomator2安卓驱动安装：
 npm install appium-android-driver
 
+appium客户端安装：
+pip install Appium-Python-Client
+
 appium 工具检查安装：
 npm install -g appium-doctor
 
 vscode（python编辑器和调试工具，安装完毕后注意安装python插件及相关格式插件）：
 https://code.visualstudio.com/
 https://go.microsoft.com/fwlink/?Linkid=852157
+
+
 
 检查运行环境：
 appium-doctor --android
