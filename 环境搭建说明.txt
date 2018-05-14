@@ -6,6 +6,8 @@ jdk8安装：
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 http://download.oracle.com/otn-pub/java/jdk/8u172-b11/a58eab1ec242421181065cdc37240b08/jdk-8u172-windows-x64.exe
 设置系统环境变量：JAVA_HOME
+%JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
 
 appium桌面版安装：
 https://github.com/appium/appium-desktop/releases/tag/v1.6.1
@@ -16,6 +18,10 @@ Android Studio安装：（需要翻墙）
 https://developer.android.com/studio/
 https://dl.google.com/dl/android/studio/install/3.1.2.0/android-studio-ide-173.4720617-windows.exe
 设置系统环境变量：ANDROID_HOME
+%ANDROID_HOME%\tools
+%ANDROID_HOME%\platform-tools
+
+下载sdk
 
 python安装：
 https://www.python.org/downloads/release/python-365/
