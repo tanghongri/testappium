@@ -29,6 +29,7 @@ def PrintDriverInfo(driver):
     if driver.page_source:
         print('##### page_source #####')
         print(driver.page_source)
+        print(driver.page_source)
 
 
 if __name__ == '__main__':
