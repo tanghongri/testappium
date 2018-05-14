@@ -1,8 +1,46 @@
-开发工具：
-    vscode
+npm安装：（安装nodejs）
+https://nodejs.org/en/
+https://nodejs.org/dist/v8.11.1/node-v8.11.1-x64.msi
 
-环境：
+jdk8安装：
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+http://download.oracle.com/otn-pub/java/jdk/8u172-b11/a58eab1ec242421181065cdc37240b08/jdk-8u172-windows-x64.exe
+设置系统环境变量：JAVA_HOME
 
-python -V
-Python 3.6.5
+appium桌面版安装：
+https://github.com/appium/appium-desktop/releases/tag/v1.6.1
+桌面版下载需要翻墙
+https://github.com/appium/appium-desktop/releases/download/v1.6.1/appium-desktop-setup-1.6.1.exe
+
+Android Studio安装：（需要翻墙）
+https://developer.android.com/studio/
+https://dl.google.com/dl/android/studio/install/3.1.2.0/android-studio-ide-173.4720617-windows.exe
+设置系统环境变量：ANDROID_HOME
+
+python安装：
+https://www.python.org/downloads/release/python-365/
+https://www.python.org/ftp/python/3.6.5/python-3.6.5-amd64.exe
+
+appium命令行安装（安装桌面版比较方便，python3会导致无法安装，先干掉python环境变量，安装好后再配置回来）：
+npm install -g appium
+python导致错误（环境变量和python27版本要求）
+gyp ERR! stack Error: Can't find Python executable "C:\Python\Python36\python.exe", you can set the PYTHON env variable.
+管理员身份运行
+npm install --global --production windows-build-tools
+
+UiAutomator2安卓驱动安装：
+npm install appium-android-driver
+
+appium 工具检查安装：
+npm install -g appium-doctor
+
+vscode（python编辑器和调试工具，安装完毕后注意安装python插件及相关格式插件）：
+https://code.visualstudio.com/
+https://go.microsoft.com/fwlink/?Linkid=852157
+
+检查运行环境：
+appium-doctor --android
+
+
+
 
